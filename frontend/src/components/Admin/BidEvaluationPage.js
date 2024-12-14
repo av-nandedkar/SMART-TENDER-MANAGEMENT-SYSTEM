@@ -86,9 +86,15 @@ const BidEvaluationPage = () => {
             const evaluationScore = tenderPropAmounts.reduce((acc, tenderAmount, index) => {
               const bidderAmount = bidderPropAmounts[index] || 0;
               const ratio = bidderAmount > 0 ? tenderAmount / bidderAmount : 0;
-              return acc + Math.max(ratio, 1); // Using Math.max ensures a score of at least 1
+            
+              // If the ratio is less than 1, subtract it, otherwise add it
+              if (ratio < 1) {
+                return acc - ratio;  // Subtract if ratio is less than 1
+              } else {
+                return acc + Math.max(ratio, 1);  // Add the ratio if it's 1 or more
+              }
             }, 0);
-
+            
 
 
             console.log(`Evaluation Score for Bid ${bid._id}:`, evaluationScore);
