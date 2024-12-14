@@ -1,13 +1,1 @@
-        modified:   backend/api/tenderRoutes.js
-        modified:   backend/models/Bid.js
-        modified:   backend/models/Tender.js
-        modified:   backend/routes/bid.js
-        modified:   backend/uploads/av.txt
-        modified:   frontend/package-lock.json
-        modified:   frontend/package.json
-        modified:   frontend/src/App.js
-        modified:   frontend/src/components/Admin/TenderManagementPage.js
-        modified:   frontend/src/components/Tender/CreateTenderPage.css
-        modified:   frontend/src/components/Tender/CreateTenderPage.js
-        modified:   frontend/src/components/Tender/ModifyTenderPage.css
-        modified:   frontend/src/components/Tender/ModifyTenderPage.js
+All SET
